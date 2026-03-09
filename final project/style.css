@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Baloo Tamma 2", sans-serif;
+    background: #252525;
+}
+
+/* Full width navbar */
+.navigation {
+    background: #222;
+    border-top: 2px solid #f2a900;
+    padding: 12px 40px !important;
+}
+
+/* Logo */
+.brand-logo {
+    height: 26px;
+    width: auto;
+}
+
+/* Links */
+.navigation-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff !important;
+}
+
+.navigation-link:hover {
+    color: #f2a900 !important;
+}
+
+
+/* Main Heading Font */
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Main Container height*/
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://github.com/harshacc031-dot/img/blob/main/1.png?raw=true');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Aligning items in main row */
+.main_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Changing Name Font sixe */
+.main_row h1 {
+    font-size: 5rem;
+
+}
+
+/* Making the main image the size of the screen */
+.main_row img {
+    width: auto;
+    height: 100vh;
+
+}
