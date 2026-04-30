@@ -1,0 +1,10 @@
+[
+  {
+    "input": "hello",
+    "output": "P\u1eb9l\u1eb9 o"
+  },
+  {
+    "input": "how are you",
+    "output": "Bawo ni o se wa"
+  }
+]
