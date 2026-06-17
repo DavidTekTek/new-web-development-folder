@@ -1,16 +1,463 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Restaurant Website Activity</title>
+
+    <style>
+
+        body{
+            background-color:#f8f9fa;
+        }
+
+        .hero{
+            background-color:#343a40;
+            color:white;
+            padding:80px 20px;
+        }
+
+        /*
+        STUDENT TASK 1
+
+        Style the footer.
+
+        Add:
+
+        background-color
+        color
+        padding
+        text-align
+
+        Example:
+
+        footer{
+            background-color:black;
+            color:white;
+        }
+
+        */
+
+    </style>
+
+</head>
 <body>
-    <h1>I am Codingal</h1>
-    I am <i>2 years old.</i><br>
-    My Address is HSR Layout, Bengaluru.<br>
-    My favourite subjects are <mark>Science</mark> and <mark>Maths.</mark><br>
-    My hobbies include Coding and solving problems.<br>
-    My favourite quotation is - <br>
-    <mark><q>Programming isn't about what you knew, it is about what you can figure out.</q></mark>
+
+<!-- ================================= -->
+<!-- NAVIGATION BAR -->
+<!-- ================================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a href="#" class="navbar-brand">
+        Tasty Bites
+    </a>
+
+    <!--
+    STUDENT TASK 2
+
+    Add a navigation menu using:
+
+    Home
+    About
+    Menu
+    Contact
+
+    Hint:
+
+    Create:
+
+    <ul class="navbar-nav ml-auto">
+
+    </ul>
+
+    -->
+    <ul class="navbar-nav ml-auto">
+<li></li><a href="#"> Home </a></li>
+<li><a href="#"> About </a></li>
+<li><a href="#"> Menu </a></li>
+<li><a href="#"> Contact </a></li>
+    </ul>
+
+</nav>
+
+
+<!-- ================================= -->
+<!-- HERO SECTION -->
+<!-- ================================= -->
+
+<section class="hero text-center">
+    <div class="container">
+        <h1>Welcome to Tasty Bites</h1>
+        <p>
+            Delicious meals made with love.
+        </p>
+        <a href="#" class="btn btn-warning">
+            Order Now
+        </a>
+    </div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- ABOUT SECTION -->
+<!-- ================================= -->
+
+<section class="container my-5">
+    <h2 class="text-center">
+        About Us
+    </h2>
+    <p class="text-center">
+
+        Tasty Bites serves delicious local
+        and international dishes.
+
+    </p>
+
+    <!--
+    STUDENT TASK 3
+
+    Add an image below.
+
+    Hint:
+
+    <img src="IMAGE URL"
+    class="img-fluid rounded">
+
+    -->
+    <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlnZXJpYW4lMjBmb29kc3xlbnwwfHwwfHx8MA%3D%3D" class="img-fluid rounded">
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- MENU SECTION -->
+<!-- ================================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Our Menu
+    </h2>
+
+    <div class="row">
+
+        <!-- CARD 1 -->
+
+        <div class="col-md-4">
+            <div class="card">
+
+                <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800"
+                class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Jollof Rice
+                    </h5>
+                    <p class="card-text">
+                        Delicious spicy rice.
+                    </p>
+                    <a href="#" class="btn btn-success">
+                        ₦3500
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+        STUDENT TASK 4
+
+        Create CARD 2
+
+        Food:
+        Chicken Burger
+
+        Use the same Bootstrap classes:
+
+        col-md-4
+        card
+        card-body
+        card-title
+        card-text
+
+        -->
+<div class="col-md-4">
+            <div class="card">
+
+                <img
+                src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyZ2VyJTIwaW1hZ2VzfGVufDB8fDB8fHww"
+                class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                       Chicken Burger
+                    </h5>
+                    <p class="card-text">
+                        Nice Burger ti kill your hunger.
+                    </p>
+                    <a href="#" class="btn btn-success">
+                        ₦5500
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        STUDENT TASK 5
+
+        Create CARD 3
+
+        Food:
+        Grilled Fish
+
+        Use the same structure as CARD 1
+
+        -->
+<div class="col-md-4">
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1665401015549-712c0dc5ef85?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R3JpbGxlZCUyMEZpc2glMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" class="card-img-top">
+
+        <div class="card-body">
+            <h5 class="card-title">
+                Grilled Fish
+            </h5>
+            <p class="card-text">
+                The fish that keeps you asking for more.
+            </p>
+            <a href="#" class="btn btn-success">
+                ₦10500
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- GALLERY -->
+<!-- ================================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Restaurant Gallery
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800"
+            class="img-fluid rounded">
+
+        </div>
+
+        <!--
+        STUDENT TASK 6
+
+        Add TWO more images.
+
+        Hint:
+
+        Use:
+
+        <div class="col-md-4">
+
+        </div>
+
+        -->
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- WHY CHOOSE US -->
+<!-- ================================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">
+        Why Choose Us?
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h4>Fresh Ingredients</h4>
+
+            <p>
+                We use only fresh ingredients.
+            </p>
+
+        </div>
+
+        <!--
+        STUDENT TASK 7
+
+        Add TWO more columns:
+
+        Fast Delivery
+
+        Affordable Prices
+
+        Use:
+
+        col-md-4
+
+        -->
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- CONTACT SECTION -->
+<!-- ================================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center">
+        Contact Us
+    </h2>
+
+    <p class="text-center">
+        Phone: +234 800 123 4567
+    </p>
+
+    <!--
+    STUDENT TASK 8
+
+    Add:
+
+    Address
+
+    Email
+
+    -->
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- CONTACT FORM -->
+<!-- ================================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center">
+        Send Us a Message
+    </h2>
+
+    <form>
+
+        <div class="form-group">
+
+            <label>Name</label>
+
+            <input
+            type="text"
+            class="form-control">
+
+        </div>
+
+        <!--
+        STUDENT TASK 9
+
+        Add:
+
+        Email Field
+
+        Message Field
+
+        Submit Button
+
+        Use:
+
+        form-group
+        form-control
+        btn btn-primary
+
+        -->
+
+    </form>
+
+</section>
+
+
+
+<!-- ================================= -->
+<!-- FOOTER -->
+<!-- ================================= -->
+
+<footer>
+
+    <!--
+    STUDENT TASK 10
+
+    Add:
+
+    © 2026 Tasty Bites Restaurant
+
+    Center the text.
+
+    -->
+
+</footer>
+
+
+<!-- ================================= -->
+<!-- BONUS CHALLENGES -->
+<!-- ================================= -->
+
+<!--
+
+BONUS 1
+Add 3 more food cards.
+
+BONUS 2
+Add social media links.
+
+BONUS 3
+Add hover effects using CSS.
+
+BONUS 4
+Add a reservation button.
+
+BONUS 5
+Change the hero section background.
+
+BONUS 6
+Add customer reviews.
+
+BONUS 7
+Make the footer look professional.
+
+-->
+
 </body>
 </html>
