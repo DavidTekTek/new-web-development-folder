@@ -1,18 +1,13 @@
-print("Welcome to the world of programming!")
-print(4)
-print("Hello Python \n")
+while True:
 
-print("hello",5)
-print("welcome to ", end= "*")
+    number = float(input("Enter a decimal number: "))
 
-x = 5
-y = "John"
-print(x)
-print(y)
+    for i in range(1):  # Nested loop
+        whole_number = int(number)
 
-codingal = "codingal"
-print(codingal)
+    print("Whole number =", whole_number)
 
-# User Input
-name = input("enter your name: ")
-print("\nHello", name, "\nwelcome to codingal")
+    choice = input("Continue? (y/n): ").lower()
+
+    if choice != "y":
+        break
