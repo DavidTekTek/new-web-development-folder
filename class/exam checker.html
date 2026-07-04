@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exam Result Checker</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+    text-align:center;
+    padding:30px;
+}
+
+.container{
+    background:white;
+    width:420px;
+    margin:auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+#output{
+    text-align:left;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<h2>📚 Exam Result Checker</h2>
+<p>Enter scores separated by commas</p>
+<input type="text" id="scores" placeholder="75,45,88,0,95">
+
+<br>
+<button onclick="checkResults()">Check Results</button>
+<div id="output"></div>
+</div>
+
+<script>
+
+function checkResults(){
+
+let scores=document.getElementById("scores").value.split(",");
+let i=0;
+let result="";
+
+while(i<scores.length){
+let score=Number(scores[i]);
+
+if(score===0){
+result+="❌ Exam Cancelled<br>";
+break;
+}
+
+if(score<0 || score>100){
+i++;
+continue;
+}
+
+switch(true){
+
+case(score>=50):
+result+="✅ "+score+" - PASS<br>";
+break;
+
+default:
+result+="❌ "+score+" - FAIL<br>";
+
+}
+
+i++;
+
+}
+
+document.getElementById("output").innerHTML=result;
+
+}
+
+</script>
+</body>
+</html>
