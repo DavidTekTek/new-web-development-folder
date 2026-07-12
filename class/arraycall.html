@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Array Activity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f5e9;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .box {
+            width: 420px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e7e34;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff5722;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>🍎 Favorite Fruits Array</h2>
+        <p>Click a button to display a fruit from the array.</p>
+
+        <button onclick="showFruit(0)">Fruit 1</button>
+        <button onclick="showFruit(1)">Fruit 2</button>
+        <button onclick="showFruit(2)">Fruit 3</button>
+        <button onclick="showFruit(3)">Fruit 4</button>
+        <button onclick="showFruit(4)">Fruit 5</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script>
+
+        let fruits = [
+            "🍎 Apple",
+            "🍌 Banana",
+            "🍇 Grapes",
+            "🍍 Pineapple",
+            "🍉 Watermelon"
+        ];
+
+        function showFruit(index) {
+
+            document.getElementById("output").innerHTML =
+                "My favorite fruit is:<br><br>" + fruits[index];
+
+        }
+
+    </script>
+
+</body>
+
+</html>
