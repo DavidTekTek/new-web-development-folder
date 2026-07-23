@@ -1,0 +1,36 @@
+.about-hero{
+
+background:#198754;
+padding:100px 20px;
+color:white;
+text-align:center;
+
+}
+
+.card{
+
+border:none;
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+h2{
+
+margin-bottom:30px;
+font-weight:bold;
+
+}
+
+section{
+
+padding-top:20px;
+padding-bottom:20px;
+
+}
