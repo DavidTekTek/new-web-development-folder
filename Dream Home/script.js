@@ -39,6 +39,13 @@ function searchProperty() {
 
     }
 
+    else if (search === "villa") {
+
+        message.innerHTML =
+            "🌴 We found beautiful villas for you!";
+
+    }   
+
     else {
 
         message.innerHTML =
