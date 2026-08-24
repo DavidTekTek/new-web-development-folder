@@ -85,3 +85,7 @@ function validateForm() {
 
     return false;
 }
+
+function showOffice() {
+   alert("📍 Visit us at 23 Johnson Ibioye, Ipaja, Lagos."); 
+}
