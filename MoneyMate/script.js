@@ -24,17 +24,14 @@ function addTransaction() {
         document.getElementById("type").value;
 
 
-    // STUDENT TASK:
-    // Check if description is empty
-    // OR amount is zero.
-    //
-    // If either is true, display:
-    //
-    // "Please enter valid information."
-    //
-    // Hint:
-    //
-    // if(description === "" || amount <= 0)
+    if (description === "" || amount <= 0) {
+
+        document.getElementById("transactionResult").innerHTML =
+            "Please enter valid information.";
+
+        return;
+
+    }
 
 
     transactions.push({

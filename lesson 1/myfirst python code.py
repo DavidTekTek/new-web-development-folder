@@ -1,13 +1,28 @@
-while True:
+ # Variables store values that a program can use.
+name = "Alex"
+age = 20
+height = 1.75
+is_student = True
 
-    number = float(input("Enter a decimal number: "))
+# Display variable values.
+print("Name:", name)
+print("Age:", age)
+print("Height:", height, "meters")
+print("Student:", is_student)
 
-    for i in range(1):  # Nested loop
-        whole_number = int(number)
+# Typecasting converts a value from one data type to another.
+age_text = "21"
+age_number = int(age_text)
+years_later = age_number + 1
 
-    print("Whole number =", whole_number)
+score = 95
+score_text = str(score)
+print("Score: " + score_text)
 
-    choice = input("Continue? (y/n): ").lower()
+price_text = "19.99"
+price = float(price_text)
+print("Price:", price)
 
-    if choice != "y":
-        break
+number = 10
+number_as_decimal = float(number)
+print("Decimal number:", number_as_decimal)
